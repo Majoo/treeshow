@@ -1,0 +1,43 @@
+#mainbox{
+  font-family: calibri;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 500px;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 3px #888;
+  min-height: 100px;
+  padding-: 10px;
+  margin: 10px;
+}
+
+.tree-heading {
+  padding-left: 50px;
+}
+
+.tree-species {
+  padding-left: 50px;
+}
+
+.tree-img {
+  width: 250px;
+  height: auto;
+  padding: 50px;
+}
+
+.btn-toggle {
+  margin-bottom: 25px;
+}
+
+.btn-container {
+  text-align: center;
+  margin: auto;
+}
+
+#heading {
+  text-align: center;
+}
