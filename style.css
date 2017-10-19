@@ -1,18 +1,34 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin-bottom: 150px;
+}
+
+button:focus {
+  outline: 0;
+}
+
 #mainbox{
-  font-family: calibri;
   box-sizing: border-box;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 
+#heading {
+  text-align: center;
+  padding: 50px;
+}
+
 .card{
   width: 500px;
-  border: 1px solid gray;
-  box-shadow: 1px 1px 3px #888;
+  border: 1px solid #bbb;
+  box-shadow: 1px 1px 1px #bbb;
   min-height: 100px;
-  padding-: 10px;
-  margin: 10px;
+  padding-: 15px;
+  margin: 15px;
+  background-color: white;
 }
 
 .tree-heading {
@@ -21,23 +37,26 @@
 
 .tree-species {
   padding-left: 50px;
+  font-style: italic;
+  font-weight: normal;
 }
 
 .tree-img {
-  width: 250px;
+  width: 350px;
   height: auto;
   padding: 50px;
+  margin: 0 auto;
 }
 
 .btn-toggle {
   margin-bottom: 25px;
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid #bbb;
+  color: #666;
 }
 
 .btn-container {
   text-align: center;
   margin: auto;
-}
-
-#heading {
-  text-align: center;
 }
