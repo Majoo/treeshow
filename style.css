@@ -9,36 +9,46 @@ button:focus {
   outline: 0;
 }
 
-#mainbox{
-  box-sizing: border-box;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 #heading {
+  font-size: 3em;
+  font-weight: normal;
   text-align: center;
   padding: 50px;
 }
 
-.card{
+#tree-list {
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.card {
   width: 500px;
   border: 1px solid #bbb;
   box-shadow: 1px 1px 1px #bbb;
+  border-radius: 3px;
   min-height: 100px;
   padding-: 15px;
   margin: 15px;
   background-color: white;
+
+  -webkit-transition: height 4s; /* Safari */
+  transition: height 4s;
 }
 
-.tree-heading {
+.card h2 {
   padding-left: 50px;
+  font-weight: normal;
 }
 
-.tree-species {
+.card p {
   padding-left: 50px;
   font-style: italic;
+  font-size: 0.9em;
   font-weight: normal;
+  padding-bottom: 25px;
 }
 
 .tree-img {

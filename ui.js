@@ -1,4 +1,4 @@
-jQuery.ajax({
+/*jQuery.ajax({
             url: "https://s3.eu-central-1.amazonaws.com/ecosia-frontend-developer/trees.json",
             type: "GET",
 
@@ -13,8 +13,8 @@ jQuery.ajax({
 
                   var card = document.createElement('div');
                   card.className = 'card';
-                  card.innerHTML = '<h2 class="tree-heading">'+trees[treeId].name+'</h2>'+
-                  '<h4 class="tree-species">'+trees[treeId].species_name+'</h4>'+
+                  card.innerHTML = '<h2>'+trees[treeId].name+'</h2>'+
+                  '<p>'+trees[treeId].species_name+'</p>'+
                   '<img id="img-'+treeId+'" class="tree-img" src='+trees[treeId].image+' style="display:none">'+
                   '<div class="btn-container"><button id="btn-'+treeId+'" class="btn-toggle" type=button" onclick="toggleImage('+treeId+')">Show image</button></div>';
 
@@ -27,7 +27,7 @@ jQuery.ajax({
             },
 
             timeout: 120000,
-        });
+        }); */
 
 function toggleImage(treeId) {
   //console.log('toggleImage, id: '+treeId);
