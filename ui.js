@@ -1,34 +1,3 @@
-/*jQuery.ajax({
-            url: "https://s3.eu-central-1.amazonaws.com/ecosia-frontend-developer/trees.json",
-            type: "GET",
-
-            contentType: 'application/json; charset=utf-8',
-            success: function(resultData) {
-                //console.log(resultData);
-                var trees = resultData.trees;
-
-                for (treeId in trees) {
-                  //console.log(trees[treeId]);
-                  var mainbox = document.getElementById('mainbox');
-
-                  var card = document.createElement('div');
-                  card.className = 'card';
-                  card.innerHTML = '<h2>'+trees[treeId].name+'</h2>'+
-                  '<p>'+trees[treeId].species_name+'</p>'+
-                  '<img id="img-'+treeId+'" class="tree-img" src='+trees[treeId].image+' style="display:none">'+
-                  '<div class="btn-container"><button id="btn-'+treeId+'" class="btn-toggle" type=button" onclick="toggleImage('+treeId+')">Show image</button></div>';
-
-                  mainbox.appendChild(card);
-                }
-
-            },
-            error : function(jqXHR, textStatus, errorThrown) {
-              console.error('error fetching trees');
-            },
-
-            timeout: 120000,
-        }); */
-
 function toggleImage(treeId) {
   //console.log('toggleImage, id: '+treeId);
   var img = document.getElementById('img-'+treeId);
